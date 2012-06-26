@@ -1,8 +1,7 @@
-
 public class Test0r {
 
 	public static void main(String[] args) {
-		System.out.println("Teste Änderungen");
+		System.out.println("Teste ï¿½nderungen"); //Blub
 	}
 
 }
