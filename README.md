@@ -1,2 +1,0 @@
-Praktische-Informatik-II
-========================
