@@ -48,7 +48,8 @@ public class Graphen {
 		return temp;
 	}
 	public String doDepthFirstSearch(){
-		
+		//TODO
+		return null;
 	}
 	public void eliminateCycle(){
 		
