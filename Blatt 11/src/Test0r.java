@@ -5,6 +5,7 @@ public class Test0r {
 		System.out.println("Ewald ist cooler"); //Blub
 		System.out.println("als Bernhard"); //wuhu eclipse upload
 		//!(Deine Mudda synchronisiert)
+		System.out.println("Dieses Programm wird die Welt verändern.");
 	}
 
 }
