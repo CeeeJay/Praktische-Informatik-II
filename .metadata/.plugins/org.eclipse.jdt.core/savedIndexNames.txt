@@ -1,0 +1,9 @@
+INDEX VERSION 1.126+/Users/Leon/Documents/Uni/Sommersemester 12/Praktische-Informatik-II/.metadata/.plugins/org.eclipse.jdt.core
+561350827.index
+1450358845.index
+411457166.index
+3356896670.index
+3507297503.index
+1361017892.index
+3247448370.index
+639126706.index
