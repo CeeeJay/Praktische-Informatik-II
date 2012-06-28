@@ -15,11 +15,11 @@ public class Graphen {
 		if ((id1 < am.length && id1 >= 0)&&(id2 < am[id1].length && id2 >= 0)) {
 			if (value < 1) {
 				am[id1][id2] = 0;
-//				am[id2][id1] = 0;
+				am[id2][id1] = 0;
 			} else if(value >=1){
 				am[id1][id2] = 1;
-//				am[id2][id1] = 1;
-			}
+				am[id2][id1] = 1;
+			}// TODO Ansehen (Da wir das gestern im Tutorium hatten, habe ich die auskommentierte Symmetrie wieder eingebunden.)
 		}
 	}
 	public String toString(){
@@ -30,8 +30,19 @@ public class Graphen {
 			}
 		}
 		return temp;
+		
+		//TODO Denkt mal darüber nach, ob das vielleicht besser wäre  
+//		String temp = "";
+//		for (int i = 0; i < am.length; i++) {
+//			for (int j = 0; j < am[i].length; j++) {
+//				temp += am[i][j] + " ";
+//			}
+//			temp += "\n";
+//		}
+//		return temp;
 	}
 	public Graphen generateTransitiveClosure(){
+		//TODO Stattdessen gute Klonmethode überlegen (Schleife?)
 		Graphen temp = this;
 		for (int k = 0; k < am.length; k++) {
 			for (int i = 0; i < am.length; i++) {
@@ -52,6 +63,6 @@ public class Graphen {
 		return null;
 	}
 	public void eliminateCycle(){
-		
+		//TODO
 	}
 }

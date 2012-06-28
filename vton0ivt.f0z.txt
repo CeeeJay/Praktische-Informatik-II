@@ -1,0 +1,75 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 3 and 2 different commits each, respectively.
+#
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 03_1/.markers
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 06/.markers
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 07/.markers
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 08/.markers
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 09/.markers
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 09_1/.markers
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 10/.markers
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 10_Netten/.markers
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 10_Stephan/.markers
+#	modified:   .metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+#	modified:   .metadata/.plugins/org.eclipse.egit.ui/dialog_settings.xml
+#	modified:   .metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache
+#	modified:   .metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml
+#	deleted:    .metadata/.plugins/org.eclipse.team.cvs.core/.running
+#	modified:   .metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml
+#	modified:   .metadata/.plugins/org.eclipse.ui.workbench/workbench.xml
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Aufgabenblatt 01/.markers
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Aufgabenblatt 01/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Aufgabenblatt 02/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Aufgabenblatt 03/.markers
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Aufgabenblatt 03/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Aufgabenblatt 06/.markers
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Aufgabenblatt 06/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Aufgabenblatt 07/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Aufgabenblatt 11/.markers
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Aufgabenblatt 11/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 01/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 02/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 03/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 03_1/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 04/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 04_1/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 05/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 06/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 07/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 08/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 09/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 09_1/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 10/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 10_Netten/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 10_Stephan/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 11/.markers
+#	.metadata/.plugins/org.eclipse.core.resources/.projects/Blatt 11/org.eclipse.jdt.core/
+#	.metadata/.plugins/org.eclipse.core.resources/.root/23.tree
+#	.metadata/.plugins/org.eclipse.jdt.core/1714547155.index
+#	.metadata/.plugins/org.eclipse.jdt.core/375070044.index
+#	Blatt 01/bin/
+#	Blatt 02/bin/
+#	Blatt 03/bin/
+#	Blatt 03_1/bin/
+#	Blatt 04/bin/
+#	Blatt 04_1/bin/
+#	Blatt 05/bin/
+#	Blatt 06/bin/
+#	Blatt 07/bin/
+#	Blatt 08/bin/
+#	Blatt 09/bin/
+#	Blatt 09_1/bin/
+#	Blatt 10/bin/
+#	Blatt 11/bin/
+

@@ -1,4 +1,4 @@
-
+// Im Projekt "Aufgabenblatt 11" weiterarbeiten!
 public class Graphen {
 	private double[][] am;
 
