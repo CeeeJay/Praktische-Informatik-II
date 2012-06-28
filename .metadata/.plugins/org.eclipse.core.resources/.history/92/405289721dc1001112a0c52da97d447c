@@ -42,7 +42,7 @@ public class Graphen {
 //		return temp;
 	}
 	public Graphen generateTransitiveClosure(){
-//		Graphen temp = this;
+		//		Graphen temp = this;
 		Graphen temp = new Graphen(am.length);
 		for (int i = 0; i < temp.am.length; i++) {
 			temp.am[i] = am[i].clone();
@@ -54,7 +54,7 @@ public class Graphen {
 					for (int j = 0; j < am.length; j++) {
 						if (am[k][j] == 1) {
 							temp.setEdge(i, j, 1);
-							temp.setEdge(j, i, 1);
+//							temp.setEdge(j, i, 1);
 						}
 					}
 				}
@@ -63,14 +63,10 @@ public class Graphen {
 		return temp;
 	}
 	public String doDepthFirstSearch(){
-		//TODO Kein Plan, Leute. :D
+		//TODO
 		return null;
 	}
 	public void eliminateCycle(){
-		//TODO Überprüfen
-		for (int i = 0; i < am.length; i++) {
-			if(am[i][i] > 0)
-				am[i][i] = 0;
-		}
+		//TODO
 	}
 }

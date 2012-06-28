@@ -63,14 +63,10 @@ public class Graphen {
 		return temp;
 	}
 	public String doDepthFirstSearch(){
-		//TODO Kein Plan, Leute. :D
+		//TODO
 		return null;
 	}
 	public void eliminateCycle(){
-		//TODO Überprüfen
-		for (int i = 0; i < am.length; i++) {
-			if(am[i][i] > 0)
-				am[i][i] = 0;
-		}
+		//TODO
 	}
 }
