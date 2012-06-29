@@ -31,11 +31,11 @@ public class Graphen {
 		}
 		return temp;
 		
-		//TODO Denkt mal darüber nach, ob das vielleicht besser wäre  
+		//TODO Denkt mal darï¿½ber nach, ob das vielleicht besser wï¿½re  (Meiner Meinung nach besser)
 //		String temp = "";
 //		for (int i = 0; i < am.length; i++) {
 //			for (int j = 0; j < am[i].length; j++) {
-//				temp += am[i][j] + " ";
+//				temp += am[i][j] + "\t";
 //			}
 //			temp += "\n";
 //		}
@@ -47,7 +47,7 @@ public class Graphen {
 		for (int i = 0; i < temp.am.length; i++) {
 			temp.am[i] = am[i].clone();
 		}
-		// TODO Überprüfen - Ich bin davon ausgegangen, Leon hätte hier sonst alles richtig gemacht.
+		// TODO ï¿½berprï¿½fen - Ich bin davon ausgegangen, Leon hï¿½tte hier sonst alles richtig gemacht.
 		for (int k = 0; k < am.length; k++) {
 			for (int i = 0; i < am.length; i++) {
 				if (am[i][k] == 1) {
@@ -67,7 +67,7 @@ public class Graphen {
 		return null;
 	}
 	public void eliminateCycle(){
-		//TODO Überprüfen
+		//TODO ï¿½berprï¿½fen
 		for (int i = 0; i < am.length; i++) {
 			if(am[i][i] > 0)
 				am[i][i] = 0;
