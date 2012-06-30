@@ -1,3 +1,4 @@
+//Jan Philipp Bamberger, Ewald Bayer, Stephan Malzkorn, Leon Peulings
 package Aufgabe_23;
 
 public class Graphen {
@@ -11,6 +12,7 @@ public class Graphen {
 			}
 		}
 	}
+	
 	public void setEdge(int id1, int id2, double value){
 		if ((id1 < am.length && id1 >= 0)&&(id2 < am[id1].length && id2 >= 0)) {
 			if (value < 1) {
@@ -20,10 +22,12 @@ public class Graphen {
 				am[id1][id2] = 1;
 				am[id2][id1] = 1;
 			}// TODO Ansehen (Da wir das gestern im Tutorium hatten, habe ich die auskommentierte Symmetrie wieder eingebunden.)
+			//Jan Philipp: Sieht so gut aus.
 		}
 	}
+	
 	public String toString(){
-		//TODO für Leon: Dem Vorgehen hier zustimmen und die Kommentare entfernen.
+		//TODO fï¿½r Leon: Dem Vorgehen hier zustimmen und die Kommentare entfernen.
 //		String temp = "";
 //		for (int i = 0; i < am.length; i++) {
 //			for (int j = 0; j < am[i].length; j++) {
@@ -32,7 +36,7 @@ public class Graphen {
 //		}
 //		return temp;
 		
-		//nichtmehrTODO Denkt mal darüber nach, ob das vielleicht besser wï¿½re  (Meiner Meinung nach besser)
+		//nichtmehrTODO Denkt mal darï¿½ber nach, ob das vielleicht besser wï¿½re (Jan Philipp: Meiner Meinung nach besser)
 		String temp = "";
 		for (int i = 0; i < am.length; i++) {
 			for (int j = 0; j < am[i].length; j++) {
@@ -47,7 +51,7 @@ public class Graphen {
 		for (int i = 0; i < temp.am.length; i++) {
 			temp.am[i] = am[i].clone();
 		}
-		// TODO Überprüfen - Ich bin davon ausgegangen, Leon hätte hier sonst alles richtig gemacht.
+		// TODO ï¿½berprï¿½fen - Ich bin davon ausgegangen, Leon hï¿½tte hier sonst alles richtig gemacht.
 		for (int k = 0; k < am.length; k++) {
 			for (int i = 0; i < am.length; i++) {
 				if (am[i][k] == 1) {
@@ -64,10 +68,12 @@ public class Graphen {
 	}
 	public String doDepthFirstSearch(){
 		//TODO Kein Plan, Leute. :D
+		//Jan Philipp: Mir wÃ¼rde nur eine rekursive LÃ¶sung einfallen.
 		return null;
 	}
 	public void eliminateCycle(){
-		//TODO Überprüfen
+		//TODO ï¿½berprï¿½fen
+		//Jan Philipp: Sollen wir auch grÃ¶ÃŸere Kreise unterbrechen? Sonstv ist die LÃ¶sung ausreichend
 		for (int i = 0; i < am.length; i++) {
 			if(am[i][i] > 0)
 				am[i][i] = 0;
