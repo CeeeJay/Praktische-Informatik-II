@@ -23,31 +23,31 @@ public class Graphen {
 		}
 	}
 	public String toString(){
-		String temp = "";
-		for (int i = 0; i < am.length; i++) {
-			for (int j = 0; j < am[i].length; j++) {
-				temp += "Value at: " + i + "/" + j + "=" + am[i][j] + "\n";
-			}
-		}
-		return temp;
-		
-		//TODO Denkt mal darï¿½ber nach, ob das vielleicht besser wï¿½re  (Meiner Meinung nach besser)
+		//TODO für Leon: Dem Vorgehen hier zustimmen und die Kommentare entfernen.
 //		String temp = "";
 //		for (int i = 0; i < am.length; i++) {
 //			for (int j = 0; j < am[i].length; j++) {
-//				temp += am[i][j] + "\t";
+//				temp += "Value at: " + i + "/" + j + "=" + am[i][j] + "\n";
 //			}
-//			temp += "\n";
 //		}
 //		return temp;
+		
+		//nichtmehrTODO Denkt mal darüber nach, ob das vielleicht besser wï¿½re  (Meiner Meinung nach besser)
+		String temp = "";
+		for (int i = 0; i < am.length; i++) {
+			for (int j = 0; j < am[i].length; j++) {
+				temp += am[i][j] + "\t";
+			}
+			temp += "\n";
+		}
+		return temp;
 	}
 	public Graphen generateTransitiveClosure(){
-//		Graphen temp = this;
 		Graphen temp = new Graphen(am.length);
 		for (int i = 0; i < temp.am.length; i++) {
 			temp.am[i] = am[i].clone();
 		}
-		// TODO ï¿½berprï¿½fen - Ich bin davon ausgegangen, Leon hï¿½tte hier sonst alles richtig gemacht.
+		// TODO Überprüfen - Ich bin davon ausgegangen, Leon hätte hier sonst alles richtig gemacht.
 		for (int k = 0; k < am.length; k++) {
 			for (int i = 0; i < am.length; i++) {
 				if (am[i][k] == 1) {
@@ -67,7 +67,7 @@ public class Graphen {
 		return null;
 	}
 	public void eliminateCycle(){
-		//TODO ï¿½berprï¿½fen
+		//TODO Überprüfen
 		for (int i = 0; i < am.length; i++) {
 			if(am[i][i] > 0)
 				am[i][i] = 0;
