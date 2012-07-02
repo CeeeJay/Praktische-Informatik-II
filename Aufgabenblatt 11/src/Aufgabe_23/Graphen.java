@@ -81,11 +81,11 @@ public class Graphen {
 	public String doDepthFirstSearch(int startelement, int wurzel){
 		//TODO Kein Plan, Leute. :D
 		//Jan Philipp: Mir würde nur eine rekursive Lösung einfallen.
-		int next = (wurzel+1)%am.length();
+		int next = (wurzel+1)%am.length;
 		String rueck = "";
 		while(next != wurzel){
-			int next = (next+1)%am.length();
-			rueck += am[startknoten][next]==1?doDepthFirst(next, startknoten):"";
+			next = (next+1)%am.length;
+			rueck += am[startelement][next]==1?doDepthFirstSearch(next, startelement):"";
 		}		
 		return rueck;
 	}
