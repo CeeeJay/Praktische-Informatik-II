@@ -3,8 +3,9 @@ package Aufgabe_23;
 
 public class Graphen {
 	private double[][] am;
-	
+
 	public Graphen(int n){
+		//TODO Korrigieren
 		am = new double[n][n];
 		for (int i = 0; i < am.length; i++) {
 			for (int j = 0; j < am[i].length; j++) {
@@ -12,8 +13,9 @@ public class Graphen {
 			}
 		}
 	}
-	
+
 	public void setEdge(int id1, int id2, double value){
+		//TODO Korrigieren
 		if ((id1 < am.length && id1 >= 0)&&(id2 < am[id1].length && id2 >= 0)) {
 			if (value < 1) {
 				am[id1][id2] = 0;
@@ -21,22 +23,12 @@ public class Graphen {
 			} else if(value >=1){
 				am[id1][id2] = 1;
 				am[id2][id1] = 1;
-			}// TODO Ansehen (Da wir das gestern im Tutorium hatten, habe ich die auskommentierte Symmetrie wieder eingebunden.)
-			//Jan Philipp: Sieht so gut aus.
+			}
 		}
 	}
-	
+
 	public String toString(){
-		//TODO f�r Leon: Dem Vorgehen hier zustimmen und die Kommentare entfernen.
-//		String temp = "";
-//		for (int i = 0; i < am.length; i++) {
-//			for (int j = 0; j < am[i].length; j++) {
-//				temp += "Value at: " + i + "/" + j + "=" + am[i][j] + "\n";
-//			}
-//		}
-//		return temp;
-		
-		//nichtmehrTODO Denkt mal dar�ber nach, ob das vielleicht besser w�re (Jan Philipp: Meiner Meinung nach besser)
+		//TODO Korrigieren
 		String temp = "";
 		for (int i = 0; i < am.length; i++) {
 			for (int j = 0; j < am[i].length; j++) {
@@ -46,12 +38,13 @@ public class Graphen {
 		}
 		return temp;
 	}
+	
 	public Graphen generateTransitiveClosure(){
+		//TODO Korrigieren
 		Graphen temp = new Graphen(am.length);
 		for (int i = 0; i < temp.am.length; i++) {
 			temp.am[i] = am[i].clone();
 		}
-		// TODO �berpr�fen - Ich bin davon ausgegangen, Leon h�tte hier sonst alles richtig gemacht.
 		for (int k = 0; k < am.length; k++) {
 			for (int i = 0; i < am.length; i++) {
 				if (am[i][k] == 1) {
@@ -66,32 +59,47 @@ public class Graphen {
 		}
 		return temp;
 	}
+
 	public String doDepthFirstSearch(){
-		//TODO Kein Plan, Leute. :D
-		//Jan Philipp: Mir würde nur eine rekursive Lösung einfallen.
+		//TODO Korrigieren
 		int startknoten = (int)(Math.random()*am.length);
+		int firstStartknoten = startknoten;
 		int next = (startknoten+1)%am.length;
-		String rueck = "";
-		while(next != startknoten){
-			next = (next+1)%am.length;
-			rueck += am[startknoten][next]==1?doDepthFirstSearch(next, startknoten):"";
-		}		
-		return rueck;
+		int startknoten_bak = -1;
+		int next_bak = -1;
+		int max = 0;
+		int newMax = 1;
+		do{
+			newMax = 1;
+			while(next != startknoten){
+				if(am[startknoten][next]==1){
+					newMax++;
+					startknoten_bak = startknoten;
+					next_bak = next;
+					startknoten = next;
+					next = startknoten_bak;
+					next = (next+1)%am.length == startknoten?(next+1)%am.length:next;
+				}
+				next = (next+1)%am.length;
+			}
+			if(newMax > max){
+				max = newMax;
+				newMax++;
+			}else{
+				if(startknoten_bak != -1){
+					newMax = max + 1;
+					startknoten = startknoten_bak;
+					next = next_bak;
+				}
+			}
+			startknoten_bak = -1;
+			next_bak = -1;
+		}while(max < newMax && startknoten != firstStartknoten);
+		return "Die Tiefe betr�gt ausgehend von " + firstStartknoten + ": " + max;
 	}
-	public String doDepthFirstSearch(int startelement, int wurzel){
-		//TODO Kein Plan, Leute. :D
-		//Jan Philipp: Mir würde nur eine rekursive Lösung einfallen.
-		int next = (wurzel+1)%am.length;
-		String rueck = "";
-		while(next != wurzel){
-			next = (next+1)%am.length;
-			rueck += am[startelement][next]==1?doDepthFirstSearch(next, startelement):"";
-		}		
-		return rueck;
-	}
+
 	public void eliminateCycle(){
-		//TODO �berpr�fen
-		//Jan Philipp: Sollen wir auch größere Kreise unterbrechen? Sonstv ist die Lösung ausreichend
+		//TODO Korrigieren
 		for (int i = 0; i < am.length; i++) {
 			if(am[i][i] > 0)
 				am[i][i] = 0;
