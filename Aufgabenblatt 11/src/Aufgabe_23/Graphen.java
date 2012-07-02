@@ -69,12 +69,12 @@ public class Graphen {
 	public String doDepthFirstSearch(){
 		//TODO Kein Plan, Leute. :D
 		//Jan Philipp: Mir würde nur eine rekursive Lösung einfallen.
-		int startknoten = (int)(Math.random()*am.length());
-		int next = (startknoten+1)%am.length();
+		int startknoten = (int)(Math.random()*am.length);
+		int next = (startknoten+1)%am.length;
 		String rueck = "";
 		while(next != startknoten){
-			int next = (next+1)%am.length();
-			rueck += am[startknoten][next]==1?doDepthFirst(next, startknoten):"";
+			next = (next+1)%am.length;
+			rueck += am[startknoten][next]==1?doDepthFirstSearch(next, startknoten):"";
 		}		
 		return rueck;
 	}
